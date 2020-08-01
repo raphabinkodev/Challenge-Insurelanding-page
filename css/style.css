@@ -1,0 +1,47 @@
+a {
+    text-decoration: none;
+    color: hsl(216, 30%, 68%);
+}
+
+.grid-container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+#inicio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#inicio a img {
+    align-items: center;
+}
+
+.menu-list {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-family: 'DM Serif Display', serif;
+    letter-spacing: .2em;
+    font-weight: 400;
+}
+
+.menu-list li {
+    list-style: none;
+    margin-right: 20px;
+    text-transform: uppercase;
+}
+
+.menu-list button {
+    text-transform: uppercase;
+    padding: 10px;
+    width: 160px;
+    color: hsl(256, 26%, 20%);
+    font-size: 16px;
+    font-family: 'DM Serif Display', serif;
+    letter-spacing: .2em;
+    background-color: white;
+    border: 2px solid hsl(256, 26%, 20%);
+    cursor: pointer;
+}
