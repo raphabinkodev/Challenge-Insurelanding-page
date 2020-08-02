@@ -1,47 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 a {
     text-decoration: none;
     color: hsl(216, 30%, 68%);
 }
 
-.grid-container {
+.container {
+    width: 100%;
     max-width: 1440px;
     margin: 0 auto;
 }
 
-#inicio {
+.menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 12px 0 12px 0;
 }
 
-#inicio a img {
-    align-items: center;
-}
-
-.menu-list {
-    display: flex;
-    align-items: center;
-    font-size: 16px;
+.menu li {
+    display: inline;
+    margin-right: 18px;
+    font-size: 18px;
     font-family: 'DM Serif Display', serif;
-    letter-spacing: .2em;
-    font-weight: 400;
-}
-
-.menu-list li {
-    list-style: none;
-    margin-right: 20px;
+    letter-spacing: .1em;
     text-transform: uppercase;
 }
 
-.menu-list button {
-    text-transform: uppercase;
-    padding: 10px;
-    width: 160px;
-    color: hsl(256, 26%, 20%);
-    font-size: 16px;
+.menu li a:hover {
+    color:  hsl(270, 9%, 17%);
+}
+
+.menu button {
+    background-color: transparent;
+    border: 2px solid hsl(270, 9%, 17%);
+    padding: 6px;
+    width: 150px;
+    font-size: 18px;
     font-family: 'DM Serif Display', serif;
-    letter-spacing: .2em;
-    background-color: white;
-    border: 2px solid hsl(256, 26%, 20%);
+    letter-spacing: .1em;
+    text-transform: uppercase;
     cursor: pointer;
+}
+
+.menu button:hover {
+    background-color:  hsl(270, 9%, 17%);
+    color: white;
+    transition: ease-in-out .3s;
+}
+
+.callMessage {
+    background-color: hsl(256, 26%, 20%);
+}
+
+.flexbox-zone {
+    display: flex;
+    justify-content: space-between;
+}
+
+.message{
+    padding-top: 130px;
+    padding-bottom: 80px;
+}
+
+.message h1::before {
+    content: '';
+    display: block;
+    width: 200px;
+    height: 2px;
+    background-color: hsl(0, 0%, 98%);
+    margin-bottom: 80px;
+}
+
+.message h1 {
+    color: hsl(0, 0%, 98%);
+    font-size: 86px;
+    font-family: 'DM Serif Display', serif;
+    font-weight: 700;
+    line-height: 70px;
+}
+
+.message p {
+    max-width: 670px;
+    margin-top: 40px;
+    color: hsl(0, 0%, 98%);
+    font-size: 1em;
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    letter-spacing: .1em;
+}
+
+.message button {
+    background-color: transparent;
+    border: 2px solid hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 98%);
+    padding: 8px;
+    width: 150px;
+    margin-top: 40px;
+    font-size: 18px;
+    font-family: 'DM Serif Display', serif;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.message button:hover {
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(256, 26%, 20%);
+    transition: ease-in-out .3s;
+}
+
+.image-message img {
+    position: relative;
+    top: 130px;
+}
+
+.information h1::before {
+    content: '';
+    display: block;
+    width: 200px;
+    height: 2px;
+    background-color: hsl(273, 4%, 51%);
+    margin-top: 280px;
+    margin-bottom: 70px;
+}
+
+.information h1 {
+    color: hsl(270, 9%, 17%);
+    font-size: 86px;
+    font-family: 'DM Serif Display', serif;
+    font-weight: 700;
+    line-height: 70px;
+}
+
+.information-option {
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-between;
+}
+
+.information-option h2 {
+    margin-top: 30px;
+    font-size: 24px;
+    color: hsl(256, 26%, 20%);
+}
+
+.information-option p {
+    margin-top: 20px;
+    font-size: 20px;
+    letter-spacing: .1rem;
+    color: hsl(216, 30%, 68%);
+}
+
+.process, .price, .people {
+    width: 430px;
 }
