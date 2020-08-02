@@ -160,3 +160,95 @@ a {
 .process, .price, .people {
     width: 430px;
 }
+
+.work .work-message {
+    display: flex;
+    background-color: hsl(256, 26%, 20%);
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 180px;
+    margin-bottom: 180px;
+    padding: 50px 130px 50px 130px;
+}
+
+.work-message h1 {
+    color: hsl(0, 0%, 98%);
+    font-size: 58px;
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+    line-height: 56px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.work-message button {
+    background-color: transparent;
+    border: 2px solid hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 98%);
+    padding: 10px;
+    width: 180px;
+    font-size: 16px;
+    font-family: 'DM Serif Display', serif;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.work-message button:hover {
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(256, 26%, 20%);
+    transition: ease-in-out .3s;
+}
+
+.copyright{
+    background-color: hsl(0, 0%, 98%);
+    padding: 60px;
+}
+
+.footer-copy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copy-social img {
+    margin-right: 12px;
+}
+
+.copyright .footer-list::before {
+    content: '';
+    display: block;
+    width: 1430px;
+    height: 2px;
+    background-color: hsl(273, 4%, 51%);
+    margin-top: 40px;
+}
+
+.faq-list {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+}
+
+.faq-list ul h3 {
+    margin-bottom: 26px;
+    font-size: 16px;
+    font-family: 'DM Serif Display', serif;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    color: hsl(273, 4%, 51%);
+}
+
+.faq-list ul li {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.faq-list a {
+    color: hsl(270, 9%, 17%);
+    font-weight: bold;
+    font-family: 'DM Serif Display', serif;
+    font-size: 11px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
